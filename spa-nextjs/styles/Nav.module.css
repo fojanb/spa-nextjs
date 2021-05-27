@@ -1,6 +1,11 @@
 .nav {
   display: flex;
   flex-direction: column;
-  background-color: rgb(209, 174, 241);
+  background-color: rgb(155, 116, 116);
   width: 100%;
+}
+.ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }

@@ -11,3 +11,4 @@ const Layout = ({ children }) => {
   );
 };
 export default Layout;
+// This component is a boiler plate for our project 
