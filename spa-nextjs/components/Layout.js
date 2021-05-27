@@ -1,11 +1,13 @@
-import styles  from "../styles/Layout.module.css";
+import styles from "../styles/Layout.module.css";
+import Nav from "../components/Nav";
 const Layout = ({ children }) => {
   return (
-    <div className={styles.container}>
-      <div className={styles.main}>
-          {children}
+    <>
+      <Nav />
+      <div className={styles.container}>
+        <div className={styles.main}>{children}</div>
       </div>
-    </div>
+    </>
   );
 };
 export default Layout;
