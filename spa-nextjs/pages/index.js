@@ -1,6 +1,6 @@
 import Head from "next/head";
 // import About from "./about";
-
+//index.js is Home page
 const Home = () => {
   return (
     <div>
