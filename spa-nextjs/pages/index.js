@@ -1,6 +1,6 @@
 import Head from "next/head";
 // import About from "./about";
-//index.js is Home page
+//index.js is index.html actually
 const Home = () => {
   return (
     <div>
@@ -12,7 +12,7 @@ const Home = () => {
           content="width=device-width, initial-scale=1"
         />
       </Head>
-      <div>HomePage</div>
+      <div>Welcome to Next.js</div>
       {/* <About /> */}
     </div>
   );
