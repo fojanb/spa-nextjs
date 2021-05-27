@@ -1,7 +1,7 @@
 .nav {
   display: flex;
   flex-direction: column;
-  background-color: rgb(155, 116, 116);
+  background-color: rgb(170, 215, 241);
   width: 100%;
 }
 .ul{
