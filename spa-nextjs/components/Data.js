@@ -1,6 +1,6 @@
 import dataStyles from "../styles/Data.module.css";
 const Data = (props) => {
-  console.log(props);
+//   console.log(props);
   return (
     <div className={dataStyles.grid}>
       {props.entities.map((e,index) => (
