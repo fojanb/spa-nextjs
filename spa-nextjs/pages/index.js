@@ -18,3 +18,16 @@ const Home = () => {
   );
 };
 export default Home;
+
+export const getStaticProps = async () => {
+  const response = await fetch(
+    `https://jsonplaceholder.typicode.com/posts?_limit=6`
+  );
+  const data = await response.json();
+  // getStaticProps will return an obect as below :
+  return {
+    props: {
+      data,
+    },
+  };
+};
