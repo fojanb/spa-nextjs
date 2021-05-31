@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+// next/route Dynamic Route
 const card = () => {
   const router = useRouter();
   const { id } = router.query;
