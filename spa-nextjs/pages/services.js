@@ -1,9 +1,8 @@
-
 const services = () => {
-    return (
-        <div>
-            --This is services page--
-        </div>
-    )
-}
+  return (
+    <div>
+      <h1>This page shows services</h1>
+    </div>
+  );
+};
 export default services;
