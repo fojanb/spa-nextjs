@@ -1,11 +1,12 @@
 .nav {
   display: flex;
   flex-direction: column;
-  background-color: rgb(170, 215, 241);
-  width: 100%;
+  width: 50%;
 }
-.ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+.ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
 }
+
