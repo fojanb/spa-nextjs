@@ -29,5 +29,6 @@ export default MyApp;
 // 17-API Routes
 // 18-Using the API Data
 // 19-Custom Meta Component
-
+// 20-Routing (Hard coded and dynamic) --> next/link (Client Side Navigation)
+//                                     --> next/router (API routing)
 // I have already know that *Why* Next.js is useful and *How* to use it
