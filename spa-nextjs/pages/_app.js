@@ -18,7 +18,7 @@ export default MyApp;
 // 6-Nav Component and Link
 // 7-Create a Header
 // 8-Styled JSX (Inline Styling)
-// 9-custom Document
+// 9-Custom Document
 // 10-Data Fetching
 // 11-getStaticProps() ----> Static Generation Mode (Fast) (Default mode in Next.js)
 // 12-Showing Data
@@ -29,3 +29,5 @@ export default MyApp;
 // 17-API Routes
 // 18-Using the API Data
 // 19-Custom Meta Component
+
+// I have already know that *Why* Next.js is useful and *How* to use it
