@@ -1,12 +1,11 @@
 .grid {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items:flex-start;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 800px;
+    max-width: 100%;
     margin-top: 3rem;
-    background-color: beige;
     padding: 30px;
   }
   
@@ -20,6 +19,7 @@
     border-radius: 10px;
     transition: color 0.15s ease, border-color 0.15s ease;
     width: 45%;
+    cursor: pointer;
   }
   
   .card:hover,
