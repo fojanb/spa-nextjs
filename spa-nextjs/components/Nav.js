@@ -4,12 +4,10 @@ const Nav = () => {
   return (
     <nav className={navStyles.nav}>
       <ul className={navStyles.ul}>
-        <li>
-          <Link href="/">Home</Link>
-        </li>
-        <li>
-          <Link href="/about">About</Link>
-        </li>
+        <Link href="/">Home</Link>
+        <Link href="/services">Services</Link>
+        <Link href="/about">About</Link>
+        <Link href="/">Samples</Link>
       </ul>
     </nav>
   );
