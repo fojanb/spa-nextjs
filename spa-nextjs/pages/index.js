@@ -30,7 +30,7 @@ export default Home;
 // 1.getStaticProps() -> will fetch data in build time (npm next build) -> (Faster Approach)
 // 2.getServerSideProps() -> will fetch data in each request->(Slower Approach)
 // 3.getStaticPaths() -> For dynamic routing
-// Always put these functions abov or belov the component
+// Always put these functions abov or below the component
 
 export const getStaticProps = async () => {
   const response = await fetch(
