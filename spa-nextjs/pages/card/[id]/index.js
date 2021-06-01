@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
-// next/route Dynamic Route
 const card = () => {
+  // next/route Dynamic Route
   const router = useRouter();
   const { id } = router.query;
   return (
@@ -24,6 +24,7 @@ export default card;
 // The Next.js router allows you to do client-side route transitions between pages,
 // similar to a single-page application.
 // A React component called Link is provided to do this client-side route transition.
+
 // '/' → pages/index.js
 // '/about' → pages/about.js
 // '/blog/hello-world' → pages/blog/[slug].js
