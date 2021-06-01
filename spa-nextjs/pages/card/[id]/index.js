@@ -6,7 +6,10 @@ const card = ({ data }) => {
   // const { id } = router.query;
   return (
     <>
-      <div>--Card Number {data.id}--</div>
+      <h3>--Card Number {data.id}--</h3>
+      <div>{data.title}</div>
+      <p>{data.body}</p>
+
       <Link href="/">Go Back</Link>
     </>
   );
@@ -34,7 +37,6 @@ export const getStaticPaths = async () => {
   const paths = ids.map((id) => ({ params: { id: id.toString() } }));
   return { paths, fallback: false };
 };
-
 
 
 // Note that : When a file is added to the pages directory
