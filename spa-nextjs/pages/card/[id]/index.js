@@ -6,7 +6,7 @@ const card = ({ data }) => {
   // const { id } = router.query;
   return (
     <>
-      <div>--Card Number --</div>
+      <div>--Card Number {data.id}--</div>
       <Link href="/">Go Back</Link>
     </>
   );
@@ -14,20 +14,9 @@ const card = ({ data }) => {
 
 export default card;
 // For dynamic routing between pages in SSG mode :
-
-export const getStaticPaths = async () => {
+export const getStaticProps = async (context) => {
   const response = await fetch(
-    `https://jsonplaceholder.typicode.com/posts`
-  );
-  const data = await response.json();
-  // getStaticProps will return an object as below :
-  const paths = data.map((d) => ({ params: { id: toString(d.id) } }));
-  return { paths , fallback : false };
-};
-
-export const getStaticProps = async ({params}) => {
-  const response = await fetch(
-    `https://jsonplaceholder.typicode.com/posts/${params.id}`
+    `https://jsonplaceholder.typicode.com/posts/${context.params.id}`
   );
   const data = await response.json();
   // getStaticProps will return an object as below :
@@ -37,6 +26,16 @@ export const getStaticProps = async ({params}) => {
     },
   };
 };
+
+export const getStaticPaths = async () => {
+  const response = await fetch(`https://jsonplaceholder.typicode.com/posts`);
+  const data = await response.json();
+  const ids = data.map((data) => data.id);
+  const paths = ids.map((id) => ({ params: { id: id.toString() } }));
+  return { paths, fallback: false };
+};
+
+
 
 // Note that : When a file is added to the pages directory
 // it's automatically available as a route.
