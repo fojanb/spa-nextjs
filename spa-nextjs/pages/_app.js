@@ -20,10 +20,10 @@ export default MyApp;
 // 8-Styled JSX (Inline Styling)
 // 9-Custom Document
 // 10-Data Fetching
-// 11-getStaticProps() ----> Static Generation Mode (Fast) (Default mode in Next.js)
+// 11-getStaticProps() ----> SSG > Static Site Generation Mode (Fast) (Default mode in Next.js)
 // 12-Showing Data
 // 13-Nested Routing
-// 14-getServerSideProps() ----> Server Side Rendering Mode (Slow)
+// 14-getServerSideProps() ----> SSR > Server Side Rendering Mode (Slow)
 // Or instead of (14) I can use (11)+(15) together.
 // 15-getstaticPaths() ----> Dynamic path
 // 16-Export a Static Website
