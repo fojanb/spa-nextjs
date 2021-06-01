@@ -1,20 +1,42 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
-const card = () => {
+const card = ({ data }) => {
   // next/route Dynamic Route
-  const router = useRouter();
-  const { id } = router.query;
+  // const router = useRouter();
+  // const { id } = router.query;
   return (
     <>
-      <div>--Card Number {id}--</div>
+      <div>--Card Number --</div>
       <Link href="/">Go Back</Link>
     </>
   );
 };
 
 export default card;
+// For dynamic routing between pages in SSG mode :
 
+export const getStaticPaths = async () => {
+  const response = await fetch(
+    `https://jsonplaceholder.typicode.com/posts`
+  );
+  const data = await response.json();
+  // getStaticProps will return an object as below :
+  const paths = data.map((d) => ({ params: { id: toString(d.id) } }));
+  return { paths , fallback : false };
+};
 
+export const getStaticProps = async ({params}) => {
+  const response = await fetch(
+    `https://jsonplaceholder.typicode.com/posts/${params.id}`
+  );
+  const data = await response.json();
+  // getStaticProps will return an object as below :
+  return {
+    props: {
+      data,
+    },
+  };
+};
 
 // Note that : When a file is added to the pages directory
 // it's automatically available as a route.
