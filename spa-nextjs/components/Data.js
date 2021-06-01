@@ -8,9 +8,9 @@ const Data = (props) => {
     <div className={dataStyles.grid}>
       {data.map((card, index) => (
         // next/link Dynamic Route
-        <Link href="/card/[id]" as={`/card/${card.id}`}>
+        <Link key={index}href="/card/[id]" as={`/card/${card.id}`}>
           <div className={dataStyles.card}>
-            <h3 key={index}>
+            <h3>
               {index + 1} - {card.title}
             </h3>
             <p>{card.body}</p>
