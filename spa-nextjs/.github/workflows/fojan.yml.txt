@@ -21,6 +21,6 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@3.6.1
         with:
           GITHUB_TOKEN: ${{ secrets.FOJAN }}
-          BRANCH: master
+          BRANCH: main
           FOLDER: out
           CLEAN: true
