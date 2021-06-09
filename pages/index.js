@@ -31,7 +31,6 @@ export default Home;
 // 2.getServerSideProps() -> will fetch data in each request->(Slower Approach)
 // 3.getStaticPaths() -> For dynamic routing
 // Always put these functions abov or below the component
-
 export const getStaticProps = async () => {
   const response = await fetch(
     `https://jsonplaceholder.typicode.com/posts?_limit=6`
